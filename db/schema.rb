@@ -19,10 +19,12 @@ ActiveRecord::Schema.define(version: 20161207180742) do
     t.string   "session_id"
     t.string   "country"
     t.boolean  "candy_fan"
+    t.boolean  "polish_candy_fan"
     t.boolean  "night_club_fan"
+    t.boolean  "pierrogi_fan"
     t.string   "fan_type"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
 end

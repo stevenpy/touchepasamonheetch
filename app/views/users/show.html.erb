@@ -1,0 +1,34 @@
+<h3>Thanks for using Heetch! </h3>
+<h4>Support us #TouchePasAMonHeetch</h4>
+
+<p>
+  <strong>Session ID</strong>
+  <%= @user.session_id %>
+</p>
+
+<p>
+  <strong>Country</strong>
+  <%= @user.country %>
+</p>
+ 
+<p>
+  <strong>Candy fan ?</strong>
+  <%= @user.candy_fan %>
+</p>
+
+<p>
+  <strong>Pierrogi fan ?</strong>
+  <%= @user.pierrogi_fan %>
+</p>
+
+<p>
+  <strong>Polish Candy fan ?</strong>
+  <%= @user.polish_candy_fan %>
+</p>
+
+<p>
+  <strong>Nightclub fan ?</strong>
+  <%= @user.night_club_fan %>
+</p>
+
+<%= link_to "You're not alone, meet others heetch!", users_path %>
