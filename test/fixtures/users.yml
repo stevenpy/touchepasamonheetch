@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  session_id: MyString
+  country: MyString
+  candy_fan: false
+  night_club_fan: false
+  fan_type: MyString
+
+two:
+  session_id: MyString
+  country: MyString
+  candy_fan: false
+  night_club_fan: false
+  fan_type: MyString
