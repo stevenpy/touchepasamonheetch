@@ -4,7 +4,9 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :session_id
       t.string :country
       t.boolean :candy_fan
+      t.boolean :polish_candy_fan
       t.boolean :night_club_fan
+      t.boolean :pierrogi_fan
       t.string :fan_type
 
       t.timestamps

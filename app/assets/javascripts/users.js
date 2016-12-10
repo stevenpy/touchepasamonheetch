@@ -5,9 +5,37 @@ $(document).ready(function() {
 			$('#candy').show();
 			$('#country').hide();
 			$('#message').hide();
+		} else if (($('#user_country').val() == 'Poland') || ($('#user_country').val() == 'poland')){
+			$('#pierrogi').show();
+			$('#country').hide();
+			$('#message').hide();			
 		} else {
 			$('#country').show();
 			$('#message').show();
+		}
+	})
+
+	$('#submit_pierrogi').on('click', function(){
+		if ($('#user_pierrogi_fan').is(':checked')){
+			$('#polishcandy').show();
+			$('#pierrogi').hide();
+		} else {
+			$('#polishcandy').hide();
+			$('#messagepierrogi').show();
+			$('#submit_pierrogi').hide();
+			$('#pierrogi').hide();
+		}
+	})
+
+	$('#submit_polishcandy').on('click', function(){
+		if ($('#user_polish_candy_fan').is(':checked')){
+			$('#nightclub').show();
+			$('#polishcandy').hide();
+		} else {
+			$('#polishcandy').hide();
+			$('#messagepierrogi').show();
+			$('#submit_pierrogi').hide();
+			$('#pierrogi').hide();
 		}
 	})
 

@@ -1,41 +1,74 @@
-<h3>Welcome to Heetch french survey</h3>
+<nav>
+  <div class="nav-wrapper red lighten-2">
+    <a href="#" class="brand-logo">Heetch</a>
+  </div>
+</nav>
 
 <p id="notice"><%= notice %></p>
 
+<div id="welcome">
+  <h3>Welcome to Heetch survey</h3>
+</div>
+
 <%= form_for @user do |f| %>
-  <div id="country">
+
+  <div id="country" class="input-field col s12">
     <%= f.label :country, 'Where are you from ?' %>
     <%= f.text_field :country %>
     <br/>
-    <button type="button" id="submit_country">Next</button>
+    <button type="button" class="btn waves-effect waves-light" id="submit_country">Next</button>
   </div>
 
-  <div id="candy" class="hidden" >
-    <%= f.label :candy_fan, 'Do you like candy ?' %>
+  <div id="candy" class="hidden col s12" >
     <%= f.check_box :candy_fan %>
+    <%= f.label :candy_fan, 'Do you like candy ?' %>
     <br/>
-    <button type="button" id="submit_candy">Next</button>
+    <br/>
+    <button type="button" class="btn waves-effect waves-light" id="submit_candy">Next</button>
   </div>
 
-  <div id="nightclub" class="hidden">
-    <%= f.label :night_club_fan, 'Do you like nightclub ?' %>
+  <div id="polishcandy" class="hidden col s12" >
+    <%= f.check_box :polish_candy_fan %>
+    <%= f.label :polish_candy_fan, 'Do you like Polish candy ?' %>
+    <br/>
+    <br/>
+    <button type="button" class="btn waves-effect waves-light" id="submit_polishcandy">Next</button>
+  </div>
+
+  <div id="nightclub" class="hidden col s12">
     <%= f.check_box :night_club_fan %>
+    <%= f.label :night_club_fan, 'Do you like nightclub ?' %>
     <br/>
-    <button type="button" id="submit_nightclub">Next</button>
+    <br/>
+    <button type="button" class="btn waves-effect waves-light" id="submit_nightclub">Next</button>
   </div>
 
-  <div id="fan" class="hidden">
-    <%= f.label :fan_type, 'So, what do you like ?' %>
+  <div id="pierrogi" class="hidden col s12">
+    <%= f.check_box :pierrogi_fan %>
+    <%= f.label :pierrogi_fan, 'Do you like pierrogi ?' %>
+    <br/>
+    <br/>
+    <button type="button" class="btn waves-effect waves-light" id="submit_pierrogi">Next</button>
+  </div>
+
+  <div id="fan" class="hidden input-field col s12">
     <%= f.text_field :fan_type %>
+    <%= f.label :fan_type, 'So, what do you like ?' %>
     <br/>
   </div>
 
   <div id="message" class="hidden" >
    <p>Thanks for following Heetch but we are not open yet in your country :(</p>
   </div>
+
+  <div id="messagepierrogi" class="hidden" >
+   <p>Sorry but we don't allow passenger who don't like the pierrogies and candies :/</p>
+  </div>
   
   <div id="submit_final" class="hidden">
-    <%= f.submit("Submit") %>
+    <button type="submit" class="btn waves-effect waves-light" id="submit_pierrogi">Submit
+      <i class="material-icons right">send</i>
+    </button>
   </div>
 
 <% end %>
