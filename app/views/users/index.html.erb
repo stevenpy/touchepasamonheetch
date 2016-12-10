@@ -1,0 +1,24 @@
+<h1>Heetch users</h1>
+ 
+<table>
+  <tr>
+    <th>Country</th>
+    <th>Pierrogi fan ?</th>
+    <th>Candy fan ?</th>
+    <th>Polish candy fan ?</th>
+    <th>Nightclub fan ?</th>
+    <th>Hobby</th>
+  </tr>
+ 
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.country %></td>
+      <td><%= user.pierrogi_fan %></td>
+      <td><%= user.candy_fan %></td>
+      <td><%= user.polish_candy_fan %></td>
+      <td><%= user.night_club_fan %></td>
+      <td><%= user.fan_type %></td>
+      <td><%= link_to 'Show', user_path(user) %></td>
+    </tr>
+  <% end %>
+</table>
